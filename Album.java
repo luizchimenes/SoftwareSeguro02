@@ -1,9 +1,11 @@
+import java.util.ArrayList;
+
 public class Album {
     private String name;
     private int anoLancamento;
-    private String[] musicas;
+    private ArrayList<Musica> musicas;
 
-    public Album(String name, int anoLancamento, String[] musicas) {
+    public Album(String name, int anoLancamento, ArrayList<Musica> musicas) {
         this.name = name;
         this.anoLancamento = anoLancamento;
         this.musicas = musicas;
@@ -28,11 +30,11 @@ public class Album {
         this.anoLancamento = anoLancamento;
     }
 
-    public String[] getMusicas() {
+    public ArrayList<Musica> getMusicas() {
         return musicas;
     }
 
-    public void setMusicas(String[] musicas) {
+    public void setMusicas(ArrayList<Musica> musicas) {
         this.musicas = musicas;
     }
 }
